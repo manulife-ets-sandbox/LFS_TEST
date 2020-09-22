@@ -1,0 +1,4 @@
+CoreInstall_7.0.00919.583.msi filter=lfs diff=lfs merge=lfs -text
+Prerequisites/CRRuntime_32bit_13_0_23.msi filter=lfs diff=lfs merge=lfs -text
+Prerequisites/dotnet-hosting-2.2.4-win.exe filter=lfs diff=lfs merge=lfs -text
+Prerequisites/NDP472-KB4054530-x86-x64-AllOS-ENU.exe filter=lfs diff=lfs merge=lfs -text

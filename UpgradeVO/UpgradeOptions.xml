@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Upgrade Info="version:3">
+  <DBServers>
+    <Server ID="0" Name="_empty_" VitalObjectsDB="_empty_" DataWarehouseDB="_empty_" ReportOutputDB="_empty_" />
+  </DBServers>
+  <ConnStrings>
+    <ConnStr Name="Default" Value="Bhvze7R7SWyxhGX9lZ1GYIQG78LgEH+09Ykb9P434YZfTT/zbtqLuRxLlSAgTMspW2rYmLFjAeh3DnTLuOOg3XTiDzViVaSw002053063023184223146215" Default="True" User="G90/msrY7uU=105234170112155122144013" Password="+6L1y2vGR8Q=082070207031102163061001" />
+  </ConnStrings>
+</Upgrade>
