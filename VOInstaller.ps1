@@ -284,16 +284,12 @@ $installer = Get-ChildItem -Filter MemberHistoryInstall_*.msi
 
 msiexec /i $installer -q `
 DB_CONNECTION_TYPE="$dbConnectionType" `
-BATCH_USER_NAME="$batchUser" `
-BATCH_USER="$domainName\$batchUser" `
-BATCH_PASSWORD="$batchPass" `
-BATCH_USER_DOMAIN="$domainName" `
 TARGETVDIR="MemberHistory" `
 WEBSITE_PORT="80" `
 WEBSITE_IP=`"`" `
 WEBSITE_DESCRIPTION=`"$webSiteDesc`" `
 WEBSITE_AUTH_MODE="$websiteAuthMode" `
-WEBSITE_HEADER="" `
+WEBSITE_HEADER=`"`" `
 APP_POOL_USER_NAME="$batchUsr" `
 APP_POOL_USER_DOMAIN="$domainName" `
 APP_POOL_USER_PASSWORD="$batchPass" `

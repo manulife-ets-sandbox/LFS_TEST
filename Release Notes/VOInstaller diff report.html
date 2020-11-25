@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #696969; background-color: #F0F0F0; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+</style>
+<title>Before vs After</title>
+</head>
+<body>
+Before vs After<br/>
+Produced: 2020-11-23 5:11:03 PM<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; Differences, With Context, Ignoring Unimportant &nbsp;
+<br/>
+Left file: N:\CWI Clients\Manulife\Release-Downloads\2020.11.16\VOInstaller.ps1 &nbsp;
+<br/>
+Right file: N:\CWI Clients\Manulife\Release-Downloads\2020.11.23\VOInstaller.ps1 &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemSame">Write-Output &quot;--- Starting Member History Installer&quot;</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">Write-Output &quot;--- Starting Member History Installer&quot;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">$installer = Get-ChildItem -Filter MemberHistoryInstall_*.msi</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">$installer = Get-ChildItem -Filter MemberHistoryInstall_*.msi</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">msiexec /i $installer -q `</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">msiexec /i $installer -q `</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">DB_CONNECTION_TYPE=&quot;$dbConnectionType&quot; `</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">DB_CONNECTION_TYPE=&quot;$dbConnectionType&quot; `</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSigMod"><span class="TextSegSigDiff">BATCH_USER_NAME=&quot;$batchUser&quot;</span> <span class="TextSegSigDiff">`</span></td>
+<td class="AlignCenter">+-</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegSigDiff">BATCH_USER=&quot;$domainName\$batchUser&quot;</span> <span class="TextSegSigDiff">`</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSigMod"><span class="TextSegSigDiff">BATCH_PASSWORD=&quot;$batchPass&quot;</span> <span class="TextSegSigDiff">`</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSigMod"><span class="TextSegSigDiff">BATCH_USER_DOMAIN=&quot;$domainName&quot;</span> <span class="TextSegSigDiff">`</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">TARGETVDIR=&quot;MemberHistory&quot; `</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">TARGETVDIR=&quot;MemberHistory&quot; `</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">WEBSITE_PORT=&quot;80&quot; `</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">WEBSITE_PORT=&quot;80&quot; `</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">WEBSITE_IP=`&quot;`&quot; `</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">WEBSITE_IP=`&quot;`&quot; `</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">WEBSITE_DESCRIPTION=`&quot;$webSiteDesc`&quot; `</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">WEBSITE_DESCRIPTION=`&quot;$webSiteDesc`&quot; `</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">WEBSITE_AUTH_MODE=&quot;$websiteAuthMode&quot; `</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">WEBSITE_AUTH_MODE=&quot;$websiteAuthMode&quot; `</td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemSigMod">WEBSITE_HEADER=<span class="TextSegSigDiff">&quot;</span>&quot; `</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="TextItemSigMod">WEBSITE_HEADER=<span class="TextSegSigDiff">`&quot;`</span>&quot; `</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemSame">APP_POOL_USER_NAME=&quot;$batchUsr&quot; `</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemSame">APP_POOL_USER_NAME=&quot;$batchUsr&quot; `</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">APP_POOL_USER_DOMAIN=&quot;$domainName&quot; `</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">APP_POOL_USER_DOMAIN=&quot;$domainName&quot; `</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">APP_POOL_USER_PASSWORD=&quot;$batchPass&quot; `</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">APP_POOL_USER_PASSWORD=&quot;$batchPass&quot; `</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">/lvx* MemberHistoryInstall.log | Out-Null</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">/lvx* MemberHistoryInstall.log | Out-Null</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemSame">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemSame">if ($LASTEXITCODE -gt 0) {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemSame">if ($LASTEXITCODE -gt 0) {</td>
+</tr>
+</table>
+<br/>
+</body>
+</html>
