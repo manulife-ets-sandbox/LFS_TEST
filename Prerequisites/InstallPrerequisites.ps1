@@ -73,3 +73,4 @@ Install-Package "Microsoft .NET Core Host - 2.2.4 (x86)" "dotnet-hosting-2.2.4-w
 Install-Package "IIS URL Rewrite Module 2" "rewrite_amd64.msi" $registryPathX86 $false;
 Install-Package "Microsoft Visual C++ 2017 Redistributable (x86) - 14.12.25810" "vc_redist.x86.exe" $registryPathX64 $true;
 Install-NETFramework 461814 "NDP472-KB4054530-x86-x64-AllOS-ENU.exe" $registryPathNET $true;
+Install-Package "Microsoft OLE DB Driver for SQL Server" "msoledbsql.msi" $registryPathX64 $false
